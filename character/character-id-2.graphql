@@ -8,3 +8,14 @@ char2: character(id:2){
     gender
   }
 }
+
+query {
+  characters(page: 2) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
